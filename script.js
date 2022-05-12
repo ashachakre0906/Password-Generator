@@ -1,4 +1,12 @@
-// Assignment Code
+var charLength = 8;
+// Creating an Array number which will store list of numbers
+var number = [];
+// Creating an Array upperCase which will store list of upperCaseletters
+var upperCase = [];
+// Creating an Array lowerCase which will store list of lowerCaseletters
+var lowerCase = [];
+// Creating an Array number which will store special characters
+var specialChar = [];
 
 function generatePassword(){
 //The isNaN() function determines whether a value is NaN or Not a Number!'
@@ -7,10 +15,12 @@ function generatePassword(){
     alert("should be a number between 8 - 28,Please try again");
     return;
   }
-  confirm ("Would you like uppercase letters in your password?");
-
+  var isUpperCase =confirm ("Would you like uppercase letters in your password?");
+  var isLowerCase =confirm ("Would you like lower letters in your password?");
+  var isSpecialchars=confirm("Would you like special characters in your password?");
+  var isNumber = confirm("Would you like numbers in your password?");
+  return;
   }
-}
 
 // Write password to the #password input
 function writePassword() {
