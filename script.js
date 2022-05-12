@@ -7,7 +7,7 @@ function generatePassword(){
     alert("Your Password should be between (8-128)characters");
     return;
   }
-  var number = prompt("Would you like to have numbers?");
+  var number = prompt("Would you like numbers?");
   if(number){
     prompt("Enter the number");
     return;
