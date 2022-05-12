@@ -17,11 +17,11 @@ function generatePassword(){
     alert("should be a number between 8 - 128.Let's try again!!");
     return;
   }
-  If((confirm ("Would you like uppercase letters in your password?")){
-   
+  If(confirm ("Would you like uppercase letters in your password?")){
+    userChoiceArr = userChoiceArr.concat(upperCaseArr);
   }
   If(confirm ("Would you like lower letters in your password?")){
-
+    userChoiceArr = userChoiceArr.concat(lowerCaseArr);
   }
   If(confirm("Would you like special characters in your password?")){
 
