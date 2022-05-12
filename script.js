@@ -1,16 +1,14 @@
 // Assignment Code
 
-var generateBtn = document.querySelector("#generate");
 function generatePassword(){
-  var passwordlength = prompt("Would you like your password between (8-128)characters?");
-  if (passwordlength < 8 || passwordlength >128){
-    alert("Your Password should be between (8-128)characters");
+//The isNaN() function determines whether a value is NaN or Not a Number!'
+  var passwordLength = prompt("How many characters you want your password to be?(8-128)characters?");
+  if (isNaN(passwordLength)|| passwordLength < 8 || passwordlength >128){
+    alert("should be a number between 8 - 28,Please try again");
     return;
   }
-  var number = prompt("Would you like numbers?");
-  if(number){
-    prompt("Enter the number");
-    return;
+  confirm ("Would you like uppercase letters in your password?");
+
   }
 }
 
@@ -20,7 +18,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-
+var generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn.addEventListener("click",writePassword);
 
