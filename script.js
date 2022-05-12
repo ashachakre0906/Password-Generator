@@ -1,24 +1,34 @@
 var charLength = 8;
 // Creating an Array number which will store list of numbers
-var number = [];
+var numberArr = ['1','2','3','4','5','6','7','8','9','0'];
 // Creating an Array upperCase which will store list of upperCaseletters
-var upperCase = [];
+var upperCaseArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 // Creating an Array lowerCase which will store list of lowerCaseletters
-var lowerCase = [];
-// Creating an Array number which will store special characters
-var specialChar = [];
+var lowerCaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+// Creating an Array specialCharArr which will store special characters
+var specialCharArr = ['!','@','#','$','%','^','&','*','(',')'];
+//This is an empty array storing user's choice
+var userChoiceArr = [];
 
 function generatePassword(){
 //The isNaN() function determines whether a value is NaN or Not a Number!'
-  var passwordLength = prompt("How many characters you want your password to be?(8-128)characters?");
+  var passwordLength = prompt("How many characters you want your password to be?(should be 8-128)characters");
   if (isNaN(passwordLength)|| passwordLength < 8 || passwordlength >128){
-    alert("should be a number between 8 - 28,Please try again");
+    alert("should be a number between 8 - 128.Let's try again!!");
     return;
   }
-  var isUpperCase =confirm ("Would you like uppercase letters in your password?");
-  var isLowerCase =confirm ("Would you like lower letters in your password?");
-  var isSpecialchars=confirm("Would you like special characters in your password?");
-  var isNumber = confirm("Would you like numbers in your password?");
+  If((confirm ("Would you like uppercase letters in your password?")){
+   
+  }
+  If(confirm ("Would you like lower letters in your password?")){
+
+  }
+  If(confirm("Would you like special characters in your password?")){
+
+  }
+  if(confirm("Would you like numbers in your password?")){
+    
+  }
   return;
   }
 
