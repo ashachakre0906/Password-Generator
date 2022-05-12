@@ -12,25 +12,30 @@ var userChoiceArr = [];
 
 function generatePassword(){
 //The isNaN() function determines whether a value is NaN or Not a Number!'
-  var passwordLength = prompt("How many characters you want your password to be?(should be 8-128)characters");
-  if (isNaN(passwordLength)|| passwordLength < 8 || passwordlength >128){
+  var charLength = prompt("How many characters you want your password to be?(should be 8-128)characters");
+  if (isNaN(charLength)|| charLength < 8 || charLength >128){
     alert("should be a number between 8 - 128.Let's try again!!");
     return;
   }
-  If(confirm ("Would you like uppercase letters in your password?")){
+  if (confirm ("Would you like uppercase letters in your password?")){
     userChoiceArr = userChoiceArr.concat(upperCaseArr);
+    return;
   }
-  If(confirm ("Would you like lower letters in your password?")){
+  if(confirm ("Would you like lowercase letters in your password?")){
     userChoiceArr = userChoiceArr.concat(lowerCaseArr);
+    return;
   }
-  If(confirm("Would you like special characters in your password?")){
-
+  if(confirm("Would you like special characters in your password?")){
+    userChoiceArr = userChoiceArr.concat(specialCharArr);
+    return;
   }
   if(confirm("Would you like numbers in your password?")){
-    
+    userChoiceArr = userChoiceArr.concat(specialCharArr);
   }
   return;
-  }
+}
+
+
 
 // Write password to the #password input
 function writePassword() {
