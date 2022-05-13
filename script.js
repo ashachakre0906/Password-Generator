@@ -9,8 +9,7 @@ var lowerCaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o',
 var specialCharArr = ['!','@','#','$','%','^','&','*','(',')'];
 //This is an empty array storing user's choice
 var userChoiceArr = [];
-var passwordArr=[];//This is an empty array
-
+var passwordArr=[];
 function generatePassword(){
 //The isNaN() function determines whether a value is NaN or Not a Number!'
   var counter = 0;//keeping track of how many times we add characters before we get to the for loop
