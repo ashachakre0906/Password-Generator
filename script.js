@@ -9,10 +9,10 @@ var lowerCaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o',
 var specialCharArr = ['!','@','#','$','%','^','&','*','(',')'];
 //This is an empty array storing user's choice
 var userChoiceArr = [];
+var passwordArr=[];//This is an empty array
 
 function generatePassword(){
 //The isNaN() function determines whether a value is NaN or Not a Number!'
-  var passwordArr=[];
   var counter = 0;//keeping track of how many times we add characters before we get to the for loop
   var charLength = prompt("How many characters you want your password to be?(should be 8-128)characters");
   if (isNaN(charLength)|| charLength < 8 || charLength >128){
@@ -42,7 +42,7 @@ function generatePassword(){
   for (i=0; i < charLength-counter;i++){
     passwordArr.push(userChoiceArr[Math.floor(Math.random() * userChoiceArr.length)])
   }
-  return passwordArr.join("")//Converts an array into the string
+  return passwordArr.join("")//Converts an array into the string and it will not change the original array
 }
 // Write password to the #password input
 function writePassword() {
