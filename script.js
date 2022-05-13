@@ -39,7 +39,6 @@ function generatePassword(){
     passwordArr.push(numberArr[Math.floor(Math.random() * numberArr.length)])//
     counter ++;
   }
-  //Created an empty Array to store the randomly selected characters.
   for (i=0; i < charLength-counter;i++){
     passwordArr.push(userChoiceArr[Math.floor(Math.random() * userChoiceArr.length)])
   }
