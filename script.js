@@ -6,7 +6,7 @@ var upperCaseArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
 // Creating an Array lowerCase which will store list of lowerCaseletters
 var lowerCaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 // Creating an Array specialCharArr which will store special characters
-var specialCharArr = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
+var specialCharArr = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~'];
 //This is an empty array storing user's choice
 var userChoiceArr = [];
 //This is an empty array storing the final password
@@ -43,10 +43,13 @@ function generatePassword(){
     finalPassword.push(numberArr[Math.floor(Math.random() * numberArr.length)])
     counter ++;
   }
+  //for loop to randomly generate password based on user inputs
+
   for (i=0; i < charLength-counter;i++){
     finalPassword.push(userChoiceArr[Math.floor(Math.random() * userChoiceArr.length)])
   }
   return finalPassword.join("")//Converts an array into the string and it will not change the original array
+
 }
 // Write password to the #password input
 function writePassword() {

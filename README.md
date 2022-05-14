@@ -38,15 +38,11 @@ THEN the password is either displayed in an alert or written to the page
 ## What I learned
 - How to write Javascript code for Password generator functionality
 - Create Function, If statememt,For loop,Comparison and logical operators
-- 
-
-***Some HTML code which I'm proud of***
-- 
+- Math.random() used with Math.floor() can be used to return random integers.
 
 ### Useful resources
-- [w3schools](https://w3schools.com)
-- [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Advanced_styling_effects)
-- [Github Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#headings)
+- [w3schools](https://www.w3schools.com/js/default.asp)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 
 ## Author
 UC Berkely Extension
