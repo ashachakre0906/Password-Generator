@@ -1,7 +1,7 @@
 ## Title of the project
 Password Generator
 ## Decsription of the project
-This challenge requires us to build a logic inside the `function generatePassword()`so that user should be able to sucessfully generate random password based on the criteria they have selected.HTML,CSS and some part of javascript code is provided by UC Berkely extension.
+This challenge requires us to build a logic inside the `function generatePassword()`by creating an array which will store the list of numbers ,uppercase letters, lowercase letters and special characters.Additionally, it will also require if statement and for loop so, that user should be able to sucessfully generate random password based on the criteria they have selected.HTML,CSS and some part of javascript code is provided by UC Berkely extension.
 ## User Story
 ```
 AS AN employee with access to sensitive data
@@ -26,6 +26,7 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
+[Demo of Password Generator](assets/Demo.mov)
 ## Links  
 [Github URL](https://github.com/ashachakre0906/Password-Generator)<br>
 [Live URL](https://ashachakre0906.github.io/Password-Generator/)<br>
@@ -40,12 +41,14 @@ THEN the password is either displayed in an alert or written to the page
 - Create Function, If statememt,For loop,Comparison and logical operators
 - Math.random() used with Math.floor() can be used to return random integers.
 
+- [Screenshot of for loop to randomly generate password based on user inputs](assets/for-loop.png)
+
 ### Useful resources
 - [w3schools](https://www.w3schools.com/js/default.asp)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions)
 
 ## Author
-UC Berkely Extension
+ Starter code given by UC Berkely Extension
 
 ## License
 Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
