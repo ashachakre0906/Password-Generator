@@ -9,8 +9,8 @@ var lowerCaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o',
 var specialCharArr = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
 //This is an empty array storing user's choice
 var userChoiceArr = [];
-//This is an empty array storing the password
-var passwordArr=[];
+//This is an empty array storing the final password
+var finalPassword=[];
 function generatePassword(){
 //The isNaN() function determines whether a value is NaN or Not a Number!'
   var counter = 0;//keeping track of how many times we add characters before we get to the for loop
@@ -25,28 +25,28 @@ function generatePassword(){
   //ask for character types and storing the password in userChoiceArr based on user's choice
   if (confirm ("Would you like uppercase letters in your password?")){
     userChoiceArr = userChoiceArr.concat(upperCaseArr);
-    passwordArr.push(upperCaseArr[Math.floor(Math.random() * upperCaseArr.length)])//Here Math.random () will help to create a random password.
+    finalPassword.push(upperCaseArr[Math.floor(Math.random() * upperCaseArr.length)])//Here Math.random () will help to create a random password.
     counter ++;
   }
   if(confirm ("Would you like lowercase letters in your password?")){
     userChoiceArr = userChoiceArr.concat(lowerCaseArr);
-    passwordArr.push(lowerCaseArr[Math.floor(Math.random() * lowerCaseArr.length)])
+    finalPassword.push(lowerCaseArr[Math.floor(Math.random() * lowerCaseArr.length)])
     counter ++;
   }
   if(confirm("Would you like special characters in your password?")){
     userChoiceArr = userChoiceArr.concat(specialCharArr);
-    passwordArr.push(specialCharArr[Math.floor(Math.random() * specialCharArr.length)])
+    finalPassword.push(specialCharArr[Math.floor(Math.random() * specialCharArr.length)])
     counter ++;
   }
   if(confirm("Would you like numbers in your password?")){
     userChoiceArr = userChoiceArr.concat(numberArr);
-    passwordArr.push(numberArr[Math.floor(Math.random() * numberArr.length)])
+    finalPassword.push(numberArr[Math.floor(Math.random() * numberArr.length)])
     counter ++;
   }
   for (i=0; i < charLength-counter;i++){
-    passwordArr.push(userChoiceArr[Math.floor(Math.random() * userChoiceArr.length)])
+    finalPassword.push(userChoiceArr[Math.floor(Math.random() * userChoiceArr.length)])
   }
-  return passwordArr.join("")//Converts an array into the string and it will not change the original array
+  return finalPassword.join("")//Converts an array into the string and it will not change the original array
 }
 // Write password to the #password input
 function writePassword() {
