@@ -6,7 +6,7 @@ var upperCaseArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
 // Creating an Array lowerCase which will store list of lowerCaseletters
 var lowerCaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 // Creating an Array specialCharArr which will store special characters
-var specialCharArr = ['!','@','#','$','%','^','&','*','(',')'];
+var specialCharArr = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~']
 //This is an empty array storing user's choice
 var userChoiceArr = [];
 //This is an empty array storing the password
@@ -16,11 +16,13 @@ function generatePassword(){
   var counter = 0;//keeping track of how many times we add characters before we get to the for loop
   //prompt for character length
   var charLength = prompt("How many characters you want your password to be?(should be 8-128)characters");
+  //if its not a number or less than 8 or greater than 128 characters, throw an alert
   if (isNaN(charLength)|| charLength < 8 || charLength >128){
     alert("should be a number between 8 - 128.Let's try again!!");
     //return to generatePassword function
     return generatePassword();
   }
+  //ask for character types and storing the password in userChoiceArr based on user's choice
   if (confirm ("Would you like uppercase letters in your password?")){
     userChoiceArr = userChoiceArr.concat(upperCaseArr);
     passwordArr.push(upperCaseArr[Math.floor(Math.random() * upperCaseArr.length)])//Here Math.random () will help to create a random password.
