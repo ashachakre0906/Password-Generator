@@ -20,22 +20,22 @@ function generatePassword(){
   }
   if (confirm ("Would you like uppercase letters in your password?")){
     userChoiceArr = userChoiceArr.concat(upperCaseArr);
-    passwordArr.push(upperCaseArr[Math.floor(Math.random() * upperCaseArr.length)])//
+    passwordArr.push(upperCaseArr[Math.floor(Math.random() * upperCaseArr.length)])
     counter ++;
   }
   if(confirm ("Would you like lowercase letters in your password?")){
     userChoiceArr = userChoiceArr.concat(lowerCaseArr);
-    passwordArr.push(lowerCaseArr[Math.floor(Math.random() * lowerCaseArr.length)])//
+    passwordArr.push(lowerCaseArr[Math.floor(Math.random() * lowerCaseArr.length)])
     counter ++;
   }
   if(confirm("Would you like special characters in your password?")){
     userChoiceArr = userChoiceArr.concat(specialCharArr);
-    passwordArr.push(specialCharArr[Math.floor(Math.random() * specialCharArr.length)])//
+    passwordArr.push(specialCharArr[Math.floor(Math.random() * specialCharArr.length)])
     counter ++;
   }
   if(confirm("Would you like numbers in your password?")){
     userChoiceArr = userChoiceArr.concat(numberArr);
-    passwordArr.push(numberArr[Math.floor(Math.random() * numberArr.length)])//
+    passwordArr.push(numberArr[Math.floor(Math.random() * numberArr.length)])
     counter ++;
   }
   for (i=0; i < charLength-counter;i++){
