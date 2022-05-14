@@ -14,9 +14,11 @@ var passwordArr=[];
 function generatePassword(){
 //The isNaN() function determines whether a value is NaN or Not a Number!'
   var counter = 0;//keeping track of how many times we add characters before we get to the for loop
+  //prompt for character length
   var charLength = prompt("How many characters you want your password to be?(should be 8-128)characters");
   if (isNaN(charLength)|| charLength < 8 || charLength >128){
     alert("should be a number between 8 - 128.Let's try again!!");
+    //return to generatePassword function
     return generatePassword();
   }
   if (confirm ("Would you like uppercase letters in your password?")){
