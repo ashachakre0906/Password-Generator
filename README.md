@@ -26,7 +26,9 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
-[Demo of Password Generator](assets/Demo.mov)
+**Screenshot of for loop to randomly generate password based on user inputs**
+<img src="./assets/for-loop.png" alt ="screenshot of for loop"/>
+
 ## Links  
 [Github URL](https://github.com/ashachakre0906/Password-Generator)<br>
 [Live URL](https://ashachakre0906.github.io/Password-Generator/)<br>
@@ -40,8 +42,6 @@ THEN the password is either displayed in an alert or written to the page
 - How to write Javascript code for Password generator functionality
 - Create Function, If statememt,For loop,Comparison and logical operators
 - Math.random() used with Math.floor() can be used to return random integers.
-
-- [Screenshot of for loop to randomly generate password based on user inputs](assets/for-loop.png)
 
 ### Useful resources
 - [w3schools](https://www.w3schools.com/js/default.asp)
