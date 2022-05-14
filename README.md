@@ -36,45 +36,20 @@ THEN the password is either displayed in an alert or written to the page
 - Javascript
 
 ## What I learned
-- How to write code from scratch.
-- Advanced CSS which includes Media queries,Flexbox,Reponsive design,CSS positioning,Psuedo Selectors,Psuedo-elements,CSS variables.
+- How to write Javascript code for Password generator functionality
+- Create Function, If statememt,For loop,Comparison and logical operators
+- 
 
 ***Some HTML code which I'm proud of***
-- Declaring CSS variable globally inside the :root selector so that I can reuse throughout the document in CSS styling sheets.
-```
-:root {
---secondarybackground-color:dimgrey;
---primarybackgroundcolor:rgb(145, 109, 115);
---navheader:whitesmoke;
---boxshadow: 0 3px 5px rgba(227, 184, 184, 0.1);
---fontfamily: "Trirong", serif;
---paracolor:cornsilk;
---textshadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
---hovershadow:0 0 2px 2px #8b8eaf , inset 0 0 5px 5px #8b8eaf;
-}
-```
-- Media query for max-width: 576px
-```
-@media screen and (max-width: 576px){
-.nav-bar li a{
-  font-size:0.8em;
-}
-```
-- Psuedo selector used and provided margin which creates the gap between the anchor links 
-for each section.
-```
-.projectlinks a:not(:last-child){
-margin-right:10px;
-}
-```
+- 
+
 ### Useful resources
 - [w3schools](https://w3schools.com)
 - [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Advanced_styling_effects)
--[CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Github Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#headings)
 
 ## Author
-- Linkedin - [@ashachakre](https://www.linkedin.com/in/ashachakre/)
+UC Berkely Extension
 
 ## License
 Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.

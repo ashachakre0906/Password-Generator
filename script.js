@@ -9,6 +9,7 @@ var lowerCaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o',
 var specialCharArr = ['!','@','#','$','%','^','&','*','(',')'];
 //This is an empty array storing user's choice
 var userChoiceArr = [];
+//This is an empty array storing the password
 var passwordArr=[];
 function generatePassword(){
 //The isNaN() function determines whether a value is NaN or Not a Number!'
@@ -20,7 +21,7 @@ function generatePassword(){
   }
   if (confirm ("Would you like uppercase letters in your password?")){
     userChoiceArr = userChoiceArr.concat(upperCaseArr);
-    passwordArr.push(upperCaseArr[Math.floor(Math.random() * upperCaseArr.length)])
+    passwordArr.push(upperCaseArr[Math.floor(Math.random() * upperCaseArr.length)])//Here Math.random () will help to create a random password.
     counter ++;
   }
   if(confirm ("Would you like lowercase letters in your password?")){
