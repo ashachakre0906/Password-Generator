@@ -1,7 +1,8 @@
 ## Title of the project
 Password Generator
 ## Decsription of the project
-This challenge requires us to build a logic inside the `function generatePassword()`by creating an array which will store the list of numbers ,uppercase letters, lowercase letters and special characters.Additionally, it will also require if statement and for loop so, that user should be able to sucessfully generate random password based on the criteria they have selected.HTML,CSS and some part of javascript code is provided by UC Berkely extension.
+This challenge requires us to build a logic inside the `function generatePassword()`by creating the function itself first.An array which will store the list of numbers ,uppercase letters, lowercase letters and special characters.Additionally, it will also require if statement,for loop so, that user should be able to sucessfully generate random password based on the criteria selected which is stored in `userChoiceArr`.isNaN() function determines whether a value is `NaN`.When user enters any value `less than 8 or greater than 128 or not a number` should receive an alert which should be the expected result.`Math.random() and Math.floor()` method generates the random password and will store the final password in finalPassword array. HTML,CSS and some part of javascript code is provided by UC Berkely extension.
+
 ## User Story
 ```
 AS AN employee with access to sensitive data
