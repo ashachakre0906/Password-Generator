@@ -1,4 +1,6 @@
-// Creating an Array number which will store list of numbers
+var generateBtn = document.querySelector("#generate");
+
+// / Creating an Array number which will store list of numbers
 var numberArr = ['1','2','3','4','5','6','7','8','9','0'];
 // Creating an Array upperCase which will store list of upperCaseletters
 var upperCaseArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
@@ -6,7 +8,6 @@ var upperCaseArr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O',
 var lowerCaseArr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 // Creating an Array specialCharArr which will store special characters
 var specialCharArr = [' ', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', ']', '^', '_', '`', '{', '|', '}', '~'];
-
 function generatePassword(){
   let finalPassword=[];
   let userChoiceArr=[];
@@ -45,7 +46,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-var generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn.addEventListener("click",writePassword);
 
